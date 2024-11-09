@@ -1,1 +1,486 @@
 // app global css in SCSS form
+
+// Fonts used
+@font-face {
+  font-family: "PublicSans-Regular";
+  src: url("../fonts/static/PublicSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PublicSans-Bold";
+  src: url("../fonts/static/PublicSans-Bold.ttf") format("truetype");
+}
+body {
+  font-family: "PublicSans-Regular", sans-serif;
+}
+
+/*
+Drawer
+*/
+
+.q-drawer {
+  background: $accent;
+}
+
+.q-drawer .q-item:focus-visible {
+  outline: 1px solid rgb(97, 94, 110);
+  outline-offset: 0px;
+}
+
+.drawer {
+  background-color: $primary;
+  border-radius: 0 15px 0 0;
+  font-family: "PublicSans-Bold", sans-serif;
+}
+
+.minimize-btn {
+  position: absolute;
+  bottom: 5rem;
+  left: 1.5rem;
+  z-index: 1;
+}
+
+.minimize-btn:focus-visible {
+  box-shadow: 0 0 0 1px rgb(97, 94, 110);
+}
+
+.hover-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 10px;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.custom-width {
+  width: 92%;
+  border-radius: 0 12px 12px 0;
+}
+
+.active-item {
+  position: relative;
+  background-color: $accent;
+}
+
+.active-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: $positive;
+}
+
+.q-focus-helper {
+  display: none;
+}
+
+.heading-desktop {
+  margin: 2.8rem 0 4rem 2rem;
+  width: 122px;
+}
+
+.menu-btn:focus-visible {
+  box-shadow: 0 0 0 1px rgb(97, 94, 110);
+}
+
+/*
+Overview
+*/
+
+.overview-budgets {
+  display: flex;
+  gap: 10rem;
+  flex-wrap: nowrap;
+  padding: 2rem 0 2.5rem 4.5rem;
+}
+
+//Transactions page
+
+.q-pagination__middle span,
+.q-btn {
+  font-family: "PublicSans-Regular", sans-serif;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.q-pagination__middle .q-btn:focus {
+  box-shadow: 0 0 0 1px #201f24;
+}
+
+.q-pagination__middle .q-btn:hover {
+  box-shadow: 0 0 0 1px #201f24;
+}
+
+.q-input .q-field__control,
+.q-select .q-field__control {
+  border-radius: 8px;
+}
+
+.q-select .q-field__inner .q-field__control .q-field__append,
+.q-input .q-field__inner .q-field__control .q-field__append {
+  color: $primary;
+}
+
+.pagination-btn {
+  color: $primary;
+  border: 1px solid #98908b;
+}
+
+.pagination-btn:hover {
+  background-color: #98908b;
+  color: white;
+  transition: ease-in 0.3s;
+}
+
+.pagination-btn:focus-visible {
+  background-color: #98908b;
+  color: white;
+  transition: ease-in 0.3s;
+}
+
+.search-input {
+  width: 20rem;
+}
+
+.q-linear-progress__track {
+  background-color: #f2f2f2;
+}
+
+/*
+Budgets Page
+*/
+
+.maximum-spending-input .q-field__native::placeholder {
+  color: #98908b;
+  opacity: 1;
+}
+.budgets-spending-summary {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  margin-right: 1.4rem;
+}
+
+/*
+Pots Page
+*/
+.pot {
+  width: calc(50% - 24px);
+}
+.btn-pots {
+  height: 53px;
+  background-color: $accent;
+  border: 1px solid transparent;
+  transition: ease-out 0.3s;
+}
+.btn-pots:hover {
+  background-color: white;
+  border: 1px solid #98908b;
+  transition: ease-in 0.3s;
+}
+.btn-pots:focus {
+  background-color: white;
+  border: 1px solid #98908b;
+  transition: ease-in 0.3s;
+}
+
+/* 
+Login Page
+*/
+.login-logo {
+  position: absolute;
+  width: 121px;
+  height: 21px;
+  left: 3.5rem;
+  top: 3.5rem;
+}
+
+.login-text {
+  position: absolute;
+  color: white;
+  width: 26rem;
+  bottom: 4rem;
+  left: 3.5rem;
+}
+
+.guest-btn {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 1.5rem;
+}
+
+/*
+Buttons
+*/
+
+.btn-primary {
+  height: 53px;
+  background-color: $primary;
+  color: white;
+  transition: ease-out 0.3s;
+}
+
+.btn-primary:hover {
+  transition: ease-in 0.3s;
+  background-color: rgb(32, 31, 36, 0.7);
+}
+.btn-primary:focus-visible {
+  transition: ease-in 0.3s;
+  background-color: rgb(32, 31, 36, 0.7);
+}
+
+/*
+Recurring bills
+*/
+
+.paid-bills-border {
+  border-left: 5px solid $positive;
+}
+
+.upcoming-bills-border {
+  border-left: 5px solid #f2cdac;
+}
+
+.due-soon-border {
+  border-left: 5px solid #82c9d7;
+}
+
+/*
+Other
+*/
+
+.custom-border-radius {
+  border-radius: 12px;
+}
+
+.custom-decoration {
+  position: relative;
+  text-wrap: nowrap;
+}
+
+.custom-decoration::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 4px;
+  height: 100%;
+  border-radius: 15px;
+  background-color: var(--custom-bg-color);
+}
+
+/*
+Mobile and tablet menu
+*/
+.mobile-menu {
+  position: sticky;
+  width: 100%;
+  background-color: $primary;
+  bottom: 0px;
+  right: 0px;
+  height: 74px;
+  border-radius: 10px 10px 0 0;
+  align-content: flex-end;
+}
+
+/*
+Custom colors
+*/
+
+.text-beige-500 {
+  color: #98908b !important;
+}
+.bg-beige-500 {
+  background: #98908b !important;
+}
+
+.text-grey-500 {
+  color: #696868 !important;
+}
+.bg-grey-500 {
+  background: #696868 !important;
+}
+
+.text-grey-300 {
+  color: #b3b3b3 !important;
+}
+.bg-grey-300 {
+  background: #b3b3b3 !important;
+}
+
+.text-navy {
+  color: #626070 !important;
+}
+.bg-navy {
+  background: #626070 !important;
+}
+
+.text-cyan {
+  color: #82c9d7 !important;
+}
+.bg-cyan {
+  background: #82c9d7 !important;
+}
+
+.text-yellow {
+  color: #f2cdac !important;
+}
+.bg-yellow {
+  background: #f2cdac !important;
+}
+
+/*
+Text presets
+*/
+
+.text-preset-1 {
+  font-family: "PublicSans-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.text-preset-2 {
+  font-family: "PublicSans-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.text-preset-3 {
+  font-family: "PublicSans-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.text-preset-4 {
+  font-family: "PublicSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.text-preset-4-bold {
+  font-family: "PublicSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.text-preset-5 {
+  font-family: "PublicSans-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.text-preset-5-bold {
+  font-family: "PublicSans-Bold", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+// Tablet classes
+
+body.screen--sm {
+  .tablet-login-logo {
+    position: absolute;
+    width: 100%;
+    height: 69px;
+    border-radius: 0 0 10px 10px;
+  }
+  .search-input {
+    width: 10rem;
+  }
+  .budgets-spending-summary {
+    display: flex;
+    flex-direction: flex;
+    padding: 0.7rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+    gap: 2rem;
+    margin-right: 0px;
+  }
+  .active-item-mobile {
+    background-color: $accent;
+    border-bottom: 4px solid $positive;
+    border-radius: 10px 10px 0 0;
+    height: 66px;
+    padding: 0 25px 0 25px;
+  }
+
+  .item-mobile {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid $primary;
+    height: 66px;
+    padding: 0 25px 0 25px;
+  }
+}
+
+// Mobile classes
+
+body.screen--xs {
+  .tablet-login-logo {
+    position: absolute;
+    width: 100%;
+    height: 69px;
+    border-radius: 0 0 10px 10px;
+  }
+  .guest-btn {
+    position: absolute;
+    bottom: 0rem;
+    right: 3rem;
+  }
+  .overview-budgets {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 1.5rem;
+  }
+  .custom-legend {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+    gap: 1rem;
+    padding-bottom: 1.1rem;
+  }
+  .search-input {
+    width: 12rem;
+  }
+  .pagination-btn {
+    width: 48px;
+    padding: 0px;
+  }
+  .budgets-spending-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1.4rem;
+    margin-right: 0px;
+  }
+  .mobile-menu {
+    position: sticky;
+    width: 100%;
+    background-color: $primary;
+    bottom: 0px;
+    right: 0px;
+    height: 52px;
+    border-radius: 10px 10px 0 0;
+    align-content: flex-end;
+  }
+  .active-item-mobile {
+    background-color: $accent;
+    border-bottom: 4px solid $positive;
+    border-radius: 10px 10px 0 0;
+    height: 44px;
+    padding: 0;
+  }
+
+  .item-mobile {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid $primary;
+    height: 44px;
+    padding: 0;
+  }
+}
