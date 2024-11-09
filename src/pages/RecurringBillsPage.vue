@@ -119,7 +119,9 @@
                 <q-td key="name" :props="props"
                   ><div class="q-py-sm text-preset-4-bold">
                     <q-avatar size="md"
-                      ><q-img :src="props.row.avatar" /></q-avatar
+                      ><q-img
+                        alt="transaction-avatar"
+                        :src="props.row.avatar" /></q-avatar
                     ><span class="q-pl-md">{{ props.row.name }}</span>
                   </div>
                   <div

@@ -172,7 +172,10 @@
                 >
                   <q-item-section v-if="$q.screen.gt.xs" avatar>
                     <q-avatar>
-                      <q-img :src="transaction.avatar" />
+                      <q-img
+                        alt="transaction-avatar"
+                        :src="transaction.avatar"
+                      />
                     </q-avatar>
                   </q-item-section>
                   <q-item-section class="text-preset-5-bold text-primary">

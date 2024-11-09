@@ -85,7 +85,7 @@
           >
             <q-item-section avatar>
               <q-avatar :size="$q.screen.lt.sm ? '32px' : '40px'">
-                <q-img :src="transaction.avatar" />
+                <q-img alt="transaction-avatar" :src="transaction.avatar" />
               </q-avatar>
             </q-item-section>
             <q-item-section

@@ -6,7 +6,12 @@
           v-if="$q.screen.lt.md"
           class="bg-primary tablet-login-logo flex flex-center"
         >
-          <q-img width="121px" height="21px" src="images/logo-large.svg" />
+          <q-img
+            alt="tablet-login-logo"
+            width="121px"
+            height="21px"
+            src="images/logo-large.svg"
+          />
         </div>
         <div
           v-if="$q.screen.gt.sm"
@@ -14,13 +19,18 @@
           style="position: relative"
         >
           <q-img
+            alt="login-image"
             class="custom-border-radius"
             width="560px"
             fit="contain"
             src="images/illustration-authentication.svg"
           >
           </q-img>
-          <q-img class="login-logo" src="images/logo-large.svg" />
+          <q-img
+            class="login-logo"
+            alt="login-logo"
+            src="images/logo-large.svg"
+          />
           <div class="login-text column q-gutter-y-lg">
             <div class="text-preset-1">
               Keep track of your money and save for your future
