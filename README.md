@@ -61,6 +61,13 @@ VUE_APP_API_KEY=your_api_key
 1. Run the App:
 
 ```sh
-
+quasar dev
 ```
 
+2. Build for Production:
+
+```sh
+quasar build
+```
+
+3. Deploy: Deploy the production build to your hosting service of choice.
