@@ -18,5 +18,9 @@ To get started with the Personal Finance App:
  1. Clone the repository:
 
 ```sh
-git clone https://github.com/thentrsfs/mortgagecalculator.git
-cd mortgage-calculator
+git clone https://github.com/thentrsfs/personal-finance-app.git
+cd personal-finance-app
+
+2.
+
+
