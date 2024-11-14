@@ -4,7 +4,7 @@ import data from "../data.json";
 import { usePotsStore } from "./pots-store";
 
 export const useTransactionsStore = defineStore("transactions", () => {
-  // Get transactions store
+  // Get transactions list
   const transactionsList = data.transactions;
 
   // Get pots store
