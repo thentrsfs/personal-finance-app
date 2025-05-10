@@ -1,16 +1,16 @@
 <template>
   <div
     class="donut-container"
-    style="position: relative; display: inline-block"
+    style="position: relative; display: inline-block "
   >
     <vc-donut
       :sections="budgetsStore.sections"
-      :size="250"
+      :size=" 250"
       unit="px"
       :thickness="30"
       :total="budgetsStore.totalBudget"
     >
-      <div>
+      <div >
         <div
           class="q-gutter-y-sm"
           style="
@@ -20,6 +20,7 @@
             transform: translate(-50%, -50%);
             z-index: 2;
           "
+         
         >
           <div class="text-preset-1 text-primary">
             ${{ budgetsStore.totalSpent }}

@@ -179,8 +179,8 @@
             <DetailsButton to="budgets" />
           </q-card-section>
           <q-card-section
-            class="overview-budgets"
-            :class="$q.screen.lt.md ? 'flex-center' : ''"
+            class="row q-gutter-x-xl no-wrap"
+            :class="$q.screen.lt.md && 'flex-center'"
           >
             <DonutChart />
             <div
