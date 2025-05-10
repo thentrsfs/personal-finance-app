@@ -86,17 +86,6 @@ Drawer
   box-shadow: 0 0 0 1px rgb(97, 94, 110);
 }
 
-/*
-Overview
-*/
-
-.overview-budgets {
-  display: flex;
-  gap: 10rem;
-  flex-wrap: nowrap;
-  padding: 2rem 0 2.5rem 4.5rem;
-}
-
 //Transactions page
 
 .q-pagination__middle span,
@@ -212,6 +201,7 @@ Login Page
   bottom: 1.1rem;
   right: 1.5rem;
 }
+
 
 /*
 Buttons

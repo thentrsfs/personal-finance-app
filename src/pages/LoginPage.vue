@@ -15,17 +15,10 @@
         </div>
         <div
           v-if="$q.screen.gt.sm"
-          class="q-px-md q-pt-md"
-          style="position: relative"
+          class="q-px-md q-py-sm "
+          style="position: relative; display: flex"
         >
-          <q-img
-            alt="login-image"
-            class="custom-border-radius"
-            width="560px"
-            fit="contain"
-            src="images/illustration-authentication.svg"
-          >
-          </q-img>
+          <img src="images/illustration-authentication.svg" alt="login-image" class=" custom-border-radius" />
           <q-img
             class="login-logo"
             alt="login-logo"
